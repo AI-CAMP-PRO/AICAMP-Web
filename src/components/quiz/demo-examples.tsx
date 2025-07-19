@@ -67,11 +67,11 @@ export default function DemoExamples({
                 <div className="flex-shrink-0 rounded-full bg-amber-100 dark:bg-amber-900 h-10 w-10 flex items-center justify-center mr-3">
                   {subjectIcons["math"]}
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-sm font-medium">
+                <div className="flex flex-col max-w-[calc(100%-52px)]">
+                  <span className="text-sm font-medium truncate">
                     {t("quiz_generator.demo.math_title")}
                   </span>
-                  <span className="text-xs text-muted-foreground mt-0.5">
+                  <span className="text-xs text-muted-foreground mt-0.5 truncate">
                     {t("quiz_generator.demo.math_desc")}
                   </span>
                 </div>
@@ -92,11 +92,11 @@ export default function DemoExamples({
                 <div className="flex-shrink-0 rounded-full bg-cyan-100 dark:bg-cyan-900 h-10 w-10 flex items-center justify-center mr-3">
                   {subjectIcons["science"]}
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-sm font-medium">
+                <div className="flex flex-col max-w-[calc(100%-52px)]">
+                  <span className="text-sm font-medium truncate">
                     {t("quiz_generator.demo.science_title")}
                   </span>
-                  <span className="text-xs text-muted-foreground mt-0.5">
+                  <span className="text-xs text-muted-foreground mt-0.5 truncate">
                     {t("quiz_generator.demo.science_desc")}
                   </span>
                 </div>

@@ -20,8 +20,13 @@ export default function Hero({ hero }: { hero: HeroType }) {
   return (
     <>
       <HeroBg />
-      <section className="py-24">
+      <section className="py-10">
         <div className="container">
+          {/* QuizAny Logo */}
+          <div className="flex items-center justify-center mb-6">
+            <h1 className="text-5xl font-bold text-blue-500">QuizAny</h1>
+          </div>
+
           {hero.show_badge && (
             <div className="flex items-center justify-center mb-8">
               <img
@@ -77,7 +82,7 @@ export default function Hero({ hero }: { hero: HeroType }) {
                         size="lg"
                         variant={item.variant || "default"}
                       >
-                        {item.icon && <Icon name={item.icon} className="" />}
+                        {item.icon && <Icon name={item.icon} className="mr-2" />}
                         {item.title}
                       </Button>
                     </Link>

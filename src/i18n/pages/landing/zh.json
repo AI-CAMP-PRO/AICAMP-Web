@@ -3,37 +3,21 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "QuizAny",
       "logo": {
-        "src": "/logo.png",
-        "alt": "ShipAny"
+        "src": "/quizany-new-logo.svg",
+        "alt": "QuizAny"
       },
       "url": "/"
     },
     "nav": {
-      "items": [
-        {
-          "title": "功能特点",
-          "url": "/#feature",
-          "icon": "RiSparkling2Line"
-        },
-        {
-          "title": "定价",
-          "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
-        },
-        {
-          "title": "案例展示",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
-        }
-      ]
+      "items": []
     },
     "buttons": [
       {
-        "title": "获取 ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
+        "title": "获取 QuizAny",
+        "url": "/quiz-generator",
+        "target": "_self",
         "variant": "link",
         "icon": "RiArrowRightUpLine"
       }
@@ -43,20 +27,20 @@
     "show_locale": true
   },
   "hero": {
-    "title": "几小时内快速构建 AI 创业项目，而不是几天",
-    "highlight_text": "快速构建",
-    "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板。<br/>通过丰富的模板和组件快速启动。",
+    "title": "几分钟内创建个性化教学测验",
+    "highlight_text": "个性化教学",
+    "description": "QuizAny 是一个专为K-12教育设计的AI测验生成工具。<br/>简单几步，轻松创建优质教学测验。",
     "announcement": {
       "label": "2025",
       "title": "🎉 新年快乐",
-      "url": "/#pricing"
+      "url": "/quiz-generator"
     },
     "tip": "🎁 2025年前五折优惠",
     "buttons": [
       {
         "title": "立即开始",
         "icon": "RiFlashlightFill",
-        "url": "/#pricing",
+        "url": "/quiz-generator",
         "target": "_self",
         "variant": "default"
       },
@@ -72,7 +56,7 @@
     "show_badge": false
   },
   "branding": {
-    "title": "ShipAny 建立在巨人的肩膀上",
+    "title": "QuizAny 采用现代技术构建",
     "items": [
       {
         "title": "Next.js",
@@ -113,27 +97,27 @@
   },
   "introduce": {
     "name": "introduce",
-    "title": "什么是 ShipAny",
+    "title": "什么是 QuizAny",
     "label": "介绍",
-    "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板，内置多种模板和组件。",
+    "description": "QuizAny 是一款专为K-12教师设计的AI驱动教育工具，可以为学生创建个性化测验。",
     "image": {
       "src": "/imgs/features/1.png"
     },
     "items": [
       {
-        "title": "即用型模板",
-        "description": "从数十个生产就绪的 AI SaaS 模板中选择，快速启动您的项目。",
-        "icon": "RiNextjsFill"
+          "title": "AI驱动测验生成",
+          "description": "只需几次点击，即可创建针对特定年级和科目量身定制的高质量教育测验。",
+          "icon": "RiRobot2Fill"
       },
       {
-        "title": "基础设施配置",
-        "description": "立即获取内置最佳实践的可扩展基础设施。",
-        "icon": "RiDatabase2Line"
+          "title": "可定制模板",
+          "description": "轻松自定义测验问题、选项和解释，以满足您的教学需求和学生学习水平。",
+          "icon": "RiLayoutGridFill"
       },
       {
-        "title": "快速部署",
-        "description": "在几小时内将您的 AI SaaS 应用部署到生产环境，而不是几天。",
-        "icon": "RiCloudyFill"
+          "title": "即时结果",
+          "description": "在几秒钟内生成完整的测验，为忙碌的K-12教育工作者节省大量准备时间。",
+          "icon": "RiTimerFlashFill"
       }
     ]
   },
@@ -142,6 +126,7 @@
     "title": "为什么选择 ShipAny",
     "label": "优势",
     "description": "获取启动 AI 创业所需的一切 - 从即用型模板到技术支持。",
+    "disabled": true,
     "items": [
       {
         "title": "完整框架",
@@ -173,6 +158,7 @@
     "name": "usage",
     "title": "如何使用 ShipAny 启动项目",
     "description": "通过三个简单步骤启动您的 AI SaaS 创业项目：",
+    "disabled": true,
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -213,6 +199,7 @@
     "name": "feature",
     "title": "ShipAny 核心功能",
     "description": "快速高效启动 AI SaaS 创业所需的一切。",
+    "disabled": true,
     "items": [
       {
         "title": "Next.js 模板",
@@ -251,6 +238,7 @@
     "label": "统计",
     "title": "用户喜爱 ShipAny",
     "description": "因为它易于使用且快速发布。",
+    "disabled": true,
     "icon": "FaRegHeart",
     "items": [
       {
@@ -274,6 +262,7 @@
     "name": "testimonial",
     "label": "用户评价",
     "title": "用户如何评价 ShipAny",
+    "disabled": true,
     "description": "听听使用 ShipAny 启动 AI 创业项目的开发者和创始人怎么说。",
     "icon": "GoThumbsup",
     "items": [
@@ -332,6 +321,7 @@
     "label": "常见问题",
     "title": "关于 ShipAny 的常见问题",
     "description": "还有其他问题？通过 Discord 或电子邮件联系我们。",
+    "disabled": true,
     "items": [
       {
         "title": "ShipAny 究竟是什么，它是如何工作的？",
@@ -361,19 +351,19 @@
   },
   "cta": {
     "name": "cta",
-    "title": "启动您的第一个 AI SaaS 创业项目",
-    "description": "从这里开始，使用 ShipAny 启动。",
+    "title": "几分钟内生成K-12测验",
+    "description": "使用AI为您的学生创建个性化教育内容",
     "buttons": [
       {
-        "title": "获取 ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
+        "title": "开始创建测验",
+        "url": "/quiz-generator",
+        "target": "_self",
         "icon": "GoArrowUpRight"
       },
       {
-        "title": "阅读文档",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
+        "title": "查看测验示例",
+        "url": "/quiz-generator",
+        "target": "_self",
         "variant": "outline"
       }
     ]

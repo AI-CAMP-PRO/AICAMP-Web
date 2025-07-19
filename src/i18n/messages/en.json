@@ -379,9 +379,9 @@
       "title": "Try a Sample Quiz",
       "description": "See instantly how the quiz generator works",
       "math_title": "Grade 3 Math",
-      "math_desc": "Basic arithmetic and patterns",
+      "math_desc": "Basic arithmetic",
       "science_title": "Grade 5 Science",
-      "science_desc": "Earth science and ecosystems",
+      "science_desc": "Earth science",
       "loading": "Loading sample quiz...",
       "success": "Sample quiz loaded!",
       "is_demo": "This is a demonstration quiz"
