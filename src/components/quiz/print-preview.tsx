@@ -37,8 +37,10 @@ export default function PrintPreview({
 
   // 生成打印内容
   const printContent = useMemo(() => {
-    const formatTime = (date: Date) => {
-      return formatDistanceToNow(date, { 
+    const formatTime = (date: Date | string) => {
+      // 确保传入参数是Date类型
+      const dateObj = typeof date === 'string' ? new Date(date) : date;
+      return formatDistanceToNow(dateObj, { 
         addSuffix: true, 
         locale: dateLocale 
       });
@@ -157,10 +159,10 @@ export default function PrintPreview({
                   <span>{formatTime(quizData.generatedAt)}</span>
                 </div>
               )}
-              {quizData.provider && (
+              {quizData.modelProvider && (
                 <div className="print-metadata-item">
                   <span>{t("quiz_generator.results.provider")}:</span>
-                  <span>{quizData.provider}</span>
+                  <span>{quizData.modelProvider}</span>
                 </div>
               )}
               <div className="print-metadata-item">

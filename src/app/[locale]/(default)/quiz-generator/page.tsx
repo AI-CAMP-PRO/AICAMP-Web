@@ -8,10 +8,12 @@ import { QuizProvider } from "@/contexts/quiz";
 export async function generateMetadata({ 
   params 
 }: { 
-  params: { locale: string } 
+  params: Promise<{ locale: string }> 
 }): Promise<Metadata> {
+  // 解析Promise获取locale
+  const resolvedParams = await params;
   // 直接使用getTranslations方法获取翻译
-  const t = await getTranslations({ locale: params.locale, namespace: 'pages.quiz-generator' });
+  const t = await getTranslations({ locale: resolvedParams.locale, namespace: 'pages.quiz-generator' });
   
   return {
     title: t('meta.title'),
@@ -24,7 +26,8 @@ export default async function QuizGeneratorPage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
   const t = await getTranslations();
 
   // 面包屑导航配置
