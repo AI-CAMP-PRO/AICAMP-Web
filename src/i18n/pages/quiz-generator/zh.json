@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "AI测验生成器 | 创建K-12测验",
+    "description": "使用人工智能为K-12学生生成定制化测验。选择年级和科目，创建引人入胜的选择题。"
+  },
+  "examples": {
+    "grade3_math": {
+      "title": "三年级数学测验",
+      "description": "基础数学运算、分数和简单应用题"
+    },
+    "grade5_science": {
+      "title": "五年级科学测验",
+      "description": "地球科学、生态系统和物质特性"
+    }
+  },
+  "placeholders": {
+    "question": "在此输入问题文本...",
+    "option": "在此输入选项文本..."
+  },
+  "help_text": {
+    "editing": "点击任何文本进行编辑。更改会自动保存。",
+    "exporting": "将测验导出为PDF或直接从浏览器打印。",
+    "session_storage": "您的测验已保存到浏览器的会话存储中。如果关闭浏览器，数据将会丢失。",
+    "grade_selection": "选择适合您学生的年级水平。",
+    "subject_selection": "选择您想要生成问题的科目。"
+  },
+  "edit_instructions": {
+    "question": "编辑问题文本。请保持清晰简洁。",
+    "options": "编辑选项。确保有一个选项是正确的。",
+    "answer": "通过点击复选框选择正确答案。"
+  },
+  "tooltips": {
+    "edit": "编辑此问题",
+    "save": "保存更改",
+    "cancel": "取消编辑",
+    "export": "导出为PDF或打印",
+    "new_quiz": "开始新测验",
+    "preview": "预览模式"
+  },
+  "aria_labels": {
+    "grade_select": "选择年级",
+    "subject_select": "选择科目",
+    "generate_button": "生成测验按钮",
+    "edit_question": "编辑问题",
+    "edit_option": "编辑选项{number}"
+  }
+} 

@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "AI Quiz Generator | Create K-12 Quizzes",
+    "description": "Generate customized quizzes for K-12 students using AI. Select grade level and subject to create engaging multiple-choice questions."
+  },
+  "examples": {
+    "grade3_math": {
+      "title": "Grade 3 Math Quiz",
+      "description": "Basic math operations, fractions, and simple word problems"
+    },
+    "grade5_science": {
+      "title": "Grade 5 Science Quiz",
+      "description": "Earth science, ecosystems, and matter properties"
+    }
+  },
+  "placeholders": {
+    "question": "Enter question text here...",
+    "option": "Enter option text here..."
+  },
+  "help_text": {
+    "editing": "Click on any text to edit. Changes are saved automatically.",
+    "exporting": "Export your quiz as PDF or print directly from your browser.",
+    "session_storage": "Your quiz is saved to your browser's session storage. It will be lost if you close the browser.",
+    "grade_selection": "Select the grade level appropriate for your students.",
+    "subject_selection": "Choose the subject you want to generate questions for."
+  },
+  "edit_instructions": {
+    "question": "Edit the question text. Be clear and concise.",
+    "options": "Edit options. Make sure one option is correct.",
+    "answer": "Select the correct answer by clicking the checkbox."
+  },
+  "tooltips": {
+    "edit": "Edit this question",
+    "save": "Save changes",
+    "cancel": "Cancel editing",
+    "export": "Export as PDF or print",
+    "new_quiz": "Start a new quiz",
+    "preview": "Preview mode"
+  },
+  "aria_labels": {
+    "grade_select": "Select grade level",
+    "subject_select": "Select subject",
+    "generate_button": "Generate quiz button",
+    "edit_question": "Edit question",
+    "edit_option": "Edit option {number}"
+  }
+} 

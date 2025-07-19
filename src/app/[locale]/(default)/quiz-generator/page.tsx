@@ -1,6 +1,23 @@
 import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
 import Crumb from "@/components/blocks/crumb";
-import { Card } from "@/components/ui/card";
+import QuizGeneratorClient from "@/components/quiz/quiz-generator-client";
+import { QuizProvider } from "@/contexts/quiz";
+
+// 动态元数据生成
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: { locale: string } 
+}): Promise<Metadata> {
+  // 直接使用getTranslations方法获取翻译
+  const t = await getTranslations({ locale: params.locale, namespace: 'pages.quiz-generator' });
+  
+  return {
+    title: t('meta.title'),
+    description: t('meta.description'),
+  };
+}
 
 export default async function QuizGeneratorPage({
   params,
@@ -25,56 +42,29 @@ export default async function QuizGeneratorPage({
   ];
 
   return (
-    <div className="container mx-auto py-8 px-4">
-      {/* 面包屑导航 */}
-      <div className="mb-6">
-        <Crumb items={crumbItems} />
-      </div>
-
-      {/* 页面标题和描述 */}
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-foreground mb-2">
-          {t("quiz_generator.title")}
-        </h1>
-        <p className="text-muted-foreground text-lg">
-          {t("quiz_generator.description")}
-        </p>
-      </div>
-
-      {/* 主要内容区域 */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* 左侧：表单区域 */}
-        <div className="lg:col-span-1">
-          <Card className="p-6">
-            <h2 className="text-xl font-semibold mb-4">
-              {t("quiz_generator.form.title")}
-            </h2>
-            <p className="text-sm text-muted-foreground mb-4">
-              {t("quiz_generator.form.description")}
-            </p>
-            {/* 表单内容将在下个任务中添加 */}
-            <div className="text-center py-8 text-muted-foreground">
-              {t("quiz_generator.form.coming_soon")}
-            </div>
-          </Card>
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20">
+      {/* 主容器 */}
+      <div className="container mx-auto px-4 py-6 sm:py-8 lg:py-12">
+        {/* 面包屑导航 */}
+        <div className="mb-6 sm:mb-8">
+          <Crumb items={crumbItems} />
         </div>
 
-        {/* 右侧：结果展示区域 */}
-        <div className="lg:col-span-2">
-          <Card className="p-6">
-            <h2 className="text-xl font-semibold mb-4">
-              {t("quiz_generator.results.title")}
-            </h2>
-            <p className="text-sm text-muted-foreground mb-4">
-              {t("quiz_generator.results.description")}
-            </p>
-            {/* 结果内容将在后续任务中添加 */}
-            <div className="text-center py-12 text-muted-foreground">
-              {t("quiz_generator.results.placeholder")}
-            </div>
-          </Card>
-        </div>
-      </div>
+        {/* 页面标题和描述 */}
+        <div className="mb-8 sm:mb-12 text-center lg:text-left">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 sm:mb-4">
+            {t("quiz_generator.title")}
+          </h1>
+          <p className="text-muted-foreground text-base sm:text-lg lg:text-xl max-w-3xl mx-auto lg:mx-0 leading-relaxed">
+            {t("quiz_generator.description")}
+          </p>
+              </div>
+
+      {/* 主要内容区域 - 包裹在QuizProvider中 */}
+      <QuizProvider>
+        <QuizGeneratorClient />
+      </QuizProvider>
+    </div>
     </div>
   );
 } 

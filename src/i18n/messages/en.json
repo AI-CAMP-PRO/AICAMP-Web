@@ -122,6 +122,160 @@
     "rating_tip": "How do you feel about ShipAny?",
     "placeholder": "Leave your words here..."
   },
+  "common": {
+    "success": "Success!",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "dismiss": "Dismiss",
+    "show_details": "Show Details",
+    "hide_details": "Hide Details",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "previous": "Previous",
+    "next": "Next",
+    "skip": "Skip",
+    "finish": "Finish",
+    "close": "Close",
+    "start": "Start"
+  },
+  "edit": {
+    "empty_value": "Click to add text",
+    "help_single": "Press Enter to save, Esc to cancel",
+    "help_multiline": "Press Ctrl+Enter to save, Esc to cancel",
+    "options_title": "Answer Options",
+    "done": "Done",
+    "set_correct_answer": "Click to set as correct answer",
+    "option_placeholder": "Enter option {letter}",
+    "move_up": "Move up",
+    "move_down": "Move down", 
+    "remove_option": "Remove option",
+    "add_option": "Add Option",
+    "options_help": "Click the letter to set the correct answer. Use the controls to reorder or remove options.",
+    "question_title": "Question Text",
+    "explanation_title": "Explanation",
+    "edit_question": "Edit Question",
+    "edit_options": "Edit Options",
+    "edit_explanation": "Edit Explanation",
+    "save_changes": "Save Changes",
+    "discard_changes": "Discard Changes", 
+    "unsaved_changes": "You have unsaved changes",
+    "question_placeholder": "Enter your question here...",
+    "explanation_placeholder": "Add an explanation for this answer (optional)...",
+    "validation": {
+      "required": "This field is required",
+      "min_length": "Minimum {count} characters required",
+      "max_length": "Maximum {count} characters allowed",
+      "invalid_format": "Invalid format"
+    }
+  },
+  "export": {
+    "title": "Export Quiz",
+    "no_quiz_data": "No quiz data available to export",
+    "quick_actions": "Quick Actions",
+    "advanced_options": "Advanced Options",
+    "custom_export": "Custom Export",
+    "current_options": "Current options",
+    "format": "Format",
+    "with_answers": "With answers",
+    "without_answers": "Without answers",
+    "auto": "Auto",
+    "processing": "Preparing export...",
+    "preview_title": "Print Preview",
+    "preview_info": "{questions} questions, {format}",
+    "print_tip": "Use Ctrl+P or Cmd+P to print",
+    "footer_text": "Quiz with {count} questions • Generated on {date}",
+    "actions": {
+      "preview": "Preview",
+      "print": "Print",
+      "download_pdf": "Download PDF",
+      "print_with_options": "Print with Options",
+      "pdf_with_options": "PDF with Options",
+      "reset": "Reset to Default",
+      "save_preferences": "Save Preferences"
+    },
+    "options": {
+      "layout": "Layout",
+      "orientation": "Orientation",
+      "paper_size": "Paper Size",
+      "questions_per_page": "Questions per Page",
+      "content": "Content Options",
+      "include_answers": "Include Answers",
+      "include_explanations": "Include Explanations",
+      "include_difficulty": "Include Difficulty",
+      "include_tags": "Include Tags",
+      "include_metadata": "Include Metadata"
+    },
+    "layout": {
+      "standard": "Standard",
+      "compact": "Compact",
+      "expanded": "Expanded"
+    },
+    "orientation": {
+      "portrait": "Portrait",
+      "landscape": "Landscape"
+    },
+    "errors": {
+      "no_data": "No quiz data to export",
+      "browser_not_supported": "Browser does not support printing",
+      "print_failed": "Print operation failed",
+      "unsupported_format": "Unsupported export format"
+    },
+    "success": {
+      "print_dialog_opened": "Print dialog opened",
+      "preferences_saved": "Export preferences saved"
+    },
+    "info": {
+      "pdf_instructions": "In the print dialog, select 'Save as PDF' as your destination to download a PDF file."
+    }
+  },
+  "loading": {
+    "default": "Loading...",
+    "complete": "complete",
+    "estimated_time": "Estimated time: {time}s",
+    "stages": {
+      "initializing": "Initializing...",
+      "validating": "Validating parameters...",
+      "generating": "Generating content with AI...",
+      "processing": "Processing results...",
+      "finalizing": "Finalizing..."
+    }
+  },
+  "errors": {
+    "unknown": "An unexpected error occurred",
+    "titles": {
+      "network": "Network Connection Error",
+      "timeout": "Request Timeout",
+      "server": "Server Error", 
+      "quota": "Usage Limit Exceeded",
+      "validation": "Invalid Input",
+      "unknown": "Unexpected Error"
+    },
+    "severity": {
+      "info": "Info",
+      "warning": "Warning",
+      "error": "Error",
+      "critical": "Critical"
+    },
+    "network": "Unable to connect to server. Please check your internet connection.",
+    "timeout": "The request took too long to complete. Please try again.",
+    "server": "Server is temporarily unavailable. Please try again later.",
+    "quota": "You have exceeded your usage limit. Please upgrade your plan.",
+    "validation": "Please check your input and try again.",
+    "actions": {
+      "upgrade": "Upgrade Plan",
+      "refresh_page": "Refresh Page"
+    },
+    "suggestions": {
+      "title": "Suggestion",
+      "network": "Check your internet connection and try again.",
+      "timeout": "Try again in a few moments, or check your connection.",
+      "server": "The server may be busy. Please try again later.",
+      "quota": "Consider upgrading your plan for more usage.",
+      "validation": "Please review your input parameters.",
+      "unknown": "If the problem persists, please contact support."
+    }
+  },
   "quiz_generator": {
     "title": "AI Quiz Generator",
     "description": "Generate customized quizzes for K-12 students using AI. Simply select grade level and subject to create engaging multiple-choice questions.",
@@ -132,12 +286,117 @@
     "form": {
       "title": "Create Quiz",
       "description": "Select grade level and subject to generate your quiz",
-      "coming_soon": "Form will be added in the next step"
+      "grade_label": "Grade Level",
+      "grade_placeholder": "Select grade level",
+      "subject_label": "Subject",
+      "subject_placeholder": "Select subject",
+      "generate_button": "Generate Quiz",
+      "generating": "Generating...",
+      "validation_message": "Please select both grade level and subject",
+      "ready_message": "Ready to generate quiz",
+      "try_example": "Try these examples:",
+      "example_math": "Grade 3 Math",
+      "example_science": "Grade 5 Science"
+    },
+    "grades": {
+      "kindergarten": "Kindergarten",
+      "grade_1": "Grade 1",
+      "grade_2": "Grade 2", 
+      "grade_3": "Grade 3",
+      "grade_4": "Grade 4",
+      "grade_5": "Grade 5",
+      "grade_6": "Grade 6"
+    },
+    "subjects": {
+      "math": "Mathematics",
+      "science": "Science",
+      "english": "English Language Arts",
+      "social_studies": "Social Studies"
+    },
+    "difficulty": {
+      "easy": "Easy",
+      "medium": "Medium", 
+      "hard": "Hard"
+    },
+    "provider": {
+      "demo": "Demo Mode"
     },
     "results": {
       "title": "Generated Quiz",
       "description": "Your AI-generated quiz questions will appear here",
-      "placeholder": "Select options above to generate quiz questions"
+      "placeholder": "Select options above to generate quiz questions",
+      "generating": "Generating your quiz...",
+      "quiz_info": "Quiz Information", 
+      "grade_subject": "Grade: {grade}, Subject: {subject}",
+      "total_questions": "{count, plural, one {# Question} other {# Questions}}",
+      "question_number": "Question {number}",
+      "questions_title": "Quiz Questions",
+      "correct_answer": "Correct Answer",
+      "explanation": "Explanation",
+      "no_questions": "No questions generated. Please try again.",
+      "demo_mode": "Demo Mode",
+      "generated": "Generated",
+      "provider": "Provider"
+    },
+    "actions": {
+      "export": "Export",
+      "regenerate": "Regenerate",
+      "edit": "Edit",
+      "save": "Save",
+      "cancel": "Cancel",
+      "edit_quiz": "Edit Quiz",
+      "preview": "Preview",
+      "new_quiz": "New Quiz"
+    },
+    "messages": {
+      "generation_started": "Quiz generation started!",
+      "generation_complete": "Quiz generated successfully!",
+      "generation_failed": "Failed to generate quiz. Please try again.",
+      "auto_saved": "Quiz auto-saved to browser"
+    },
+    "welcome": {
+      "title": "Welcome to AI Quiz Generator",
+      "subtitle": "Create high-quality K-12 quizzes in seconds",
+      "welcome_tab": "Welcome",
+      "demo_tab": "Try a Demo",
+      "feature1_title": "Generate Customized Quizzes",
+      "feature1_desc": "Easily create grade-appropriate quizzes for math, science, and more",
+      "feature2_title": "Edit and Customize",
+      "feature2_desc": "Fine-tune questions and answers to match your teaching needs",
+      "feature3_title": "Export and Share",
+      "feature3_desc": "Download as PDF or print directly for classroom use",
+      "try_demo_button": "Try a Demo",
+      "start_guide_button": "Guide Me",
+      "demo_title": "Select a Demo Quiz",
+      "demo_description": "Try these pre-made quizzes to see how everything works",
+      "math_demo_title": "Grade 3 Math Quiz",
+      "math_demo_desc": "Basic operations, patterns, and measurement",
+      "science_demo_title": "Grade 5 Science Quiz",
+      "science_demo_desc": "Energy, plants, ecosystems, and matter",
+      "instant_demo": "Instant preview"
+    },
+    "demo": {
+      "title": "Try a Sample Quiz",
+      "description": "See instantly how the quiz generator works",
+      "math_title": "Grade 3 Math",
+      "math_desc": "Basic arithmetic and patterns",
+      "science_title": "Grade 5 Science",
+      "science_desc": "Earth science and ecosystems",
+      "loading": "Loading sample quiz...",
+      "success": "Sample quiz loaded!",
+      "is_demo": "This is a demonstration quiz"
+    },
+    "guide": {
+      "welcome": "Let's Get Started",
+      "welcome_message": "This brief guide will show you how to use the quiz generator",
+      "step1_title": "Select Grade & Subject",
+      "step1_content": "Choose the appropriate grade level and subject for your quiz",
+      "step2_title": "Generate Your Quiz",
+      "step2_content": "Click the Generate Quiz button to create customized questions",
+      "step3_title": "Review & Edit",
+      "step3_content": "Review questions and click the edit button to make changes",
+      "step4_title": "Export Options",
+      "step4_content": "Print or save as PDF for classroom use"
     }
   }
 }
