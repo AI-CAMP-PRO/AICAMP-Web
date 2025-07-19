@@ -121,5 +121,23 @@
     "contact_tip": "Other ways to contact us",
     "rating_tip": "How do you feel about ShipAny?",
     "placeholder": "Leave your words here..."
+  },
+  "quiz_generator": {
+    "title": "AI Quiz Generator",
+    "description": "Generate customized quizzes for K-12 students using AI. Simply select grade level and subject to create engaging multiple-choice questions.",
+    "breadcrumb": {
+      "home": "Home",
+      "quiz_generator": "Quiz Generator"
+    },
+    "form": {
+      "title": "Create Quiz",
+      "description": "Select grade level and subject to generate your quiz",
+      "coming_soon": "Form will be added in the next step"
+    },
+    "results": {
+      "title": "Generated Quiz",
+      "description": "Your AI-generated quiz questions will appear here",
+      "placeholder": "Select options above to generate quiz questions"
+    }
   }
 }
