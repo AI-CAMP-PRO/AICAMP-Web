@@ -121,5 +121,283 @@
     "contact_tip": "其他联系方式",
     "rating_tip": "您对 ShipAny 的看法如何？",
     "placeholder": "在这里留下您的反馈..."
+  },
+  "common": {
+    "success": "成功！",
+    "retry": "重试",
+    "cancel": "取消",
+    "dismiss": "关闭",
+    "show_details": "显示详情",
+    "hide_details": "隐藏详情",
+    "save": "保存",
+    "edit": "编辑",
+    "delete": "删除",
+    "previous": "上一步",
+    "next": "下一步",
+    "skip": "跳过",
+    "finish": "完成",
+    "close": "关闭",
+    "start": "开始"
+  },
+  "edit": {
+    "empty_value": "点击添加文本",
+    "help_single": "按 Enter 保存，Esc 取消",
+    "help_multiline": "按 Ctrl+Enter 保存，Esc 取消",
+    "options_title": "答案选项",
+    "done": "完成",
+    "set_correct_answer": "点击设为正确答案",
+    "option_placeholder": "输入选项 {letter}",
+    "move_up": "上移",
+    "move_down": "下移",
+    "remove_option": "删除选项",
+    "add_option": "添加选项",
+    "options_help": "点击字母设置正确答案。使用控制按钮重新排序或删除选项。",
+    "question_title": "题目文本",
+    "explanation_title": "解释说明",
+    "edit_question": "编辑题目",
+    "edit_options": "编辑选项",
+    "edit_explanation": "编辑解释",
+    "save_changes": "保存更改",
+    "discard_changes": "放弃更改",
+    "unsaved_changes": "您有未保存的更改",
+    "question_placeholder": "请在此输入您的问题...",
+    "explanation_placeholder": "为此答案添加解释（可选）...",
+    "validation": {
+      "required": "此字段为必填项",
+      "min_length": "至少需要 {count} 个字符",
+      "max_length": "最多允许 {count} 个字符",
+      "invalid_format": "格式无效"
+    }
+  },
+  "export": {
+    "title": "导出测验",
+    "no_quiz_data": "没有可导出的测验数据",
+    "quick_actions": "快速操作",
+    "advanced_options": "高级选项",
+    "custom_export": "自定义导出",
+    "current_options": "当前选项",
+    "format": "格式",
+    "with_answers": "包含答案",
+    "without_answers": "不含答案",
+    "auto": "自动",
+    "processing": "正在准备导出...",
+    "preview_title": "打印预览",
+    "preview_info": "{questions} 道题目，{format}",
+    "print_tip": "使用 Ctrl+P 或 Cmd+P 打印",
+    "footer_text": "测验共 {count} 道题目 • 生成于 {date}",
+    "actions": {
+      "preview": "预览",
+      "print": "打印",
+      "download_pdf": "下载PDF",
+      "print_with_options": "使用选项打印",
+      "pdf_with_options": "使用选项生成PDF",
+      "reset": "重置为默认",
+      "save_preferences": "保存偏好设置"
+    },
+    "options": {
+      "layout": "布局",
+      "orientation": "方向",
+      "paper_size": "纸张大小",
+      "questions_per_page": "每页题目数",
+      "content": "内容选项",
+      "include_answers": "包含答案",
+      "include_explanations": "包含解释",
+      "include_difficulty": "包含难度",
+      "include_tags": "包含标签",
+      "include_metadata": "包含元数据"
+    },
+    "layout": {
+      "standard": "标准",
+      "compact": "紧凑",
+      "expanded": "宽松"
+    },
+    "orientation": {
+      "portrait": "纵向",
+      "landscape": "横向"
+    },
+    "errors": {
+      "no_data": "没有测验数据可导出",
+      "browser_not_supported": "浏览器不支持打印功能",
+      "print_failed": "打印操作失败",
+      "unsupported_format": "不支持的导出格式"
+    },
+    "success": {
+      "print_dialog_opened": "打印对话框已打开",
+      "preferences_saved": "导出偏好设置已保存"
+    },
+    "info": {
+      "pdf_instructions": "在打印对话框中，选择\"另存为PDF\"作为目标来下载PDF文件。"
+    }
+  },
+  "loading": {
+    "default": "加载中...",
+    "complete": "完成",
+    "estimated_time": "预计时间：{time}秒",
+    "stages": {
+      "initializing": "初始化中...",
+      "validating": "验证参数中...",
+      "generating": "AI生成内容中...",
+      "processing": "处理结果中...",
+      "finalizing": "最终处理中..."
+    }
+  },
+  "errors": {
+    "unknown": "发生了意外错误",
+    "titles": {
+      "network": "网络连接错误",
+      "timeout": "请求超时",
+      "server": "服务器错误",
+      "quota": "使用额度已超限",
+      "validation": "输入无效",
+      "unknown": "未知错误"
+    },
+    "severity": {
+      "info": "信息",
+      "warning": "警告",
+      "error": "错误",
+      "critical": "严重"
+    },
+    "network": "无法连接到服务器，请检查您的网络连接。",
+    "timeout": "请求处理时间过长，请重试。",
+    "server": "服务器暂时不可用，请稍后重试。",
+    "quota": "您已超出使用限额，请升级您的计划。",
+    "validation": "请检查您的输入并重试。",
+    "actions": {
+      "upgrade": "升级计划",
+      "refresh_page": "刷新页面"
+    },
+    "suggestions": {
+      "title": "建议",
+      "network": "检查您的网络连接并重试。",
+      "timeout": "请稍等片刻再试，或检查您的连接。",
+      "server": "服务器可能繁忙，请稍后重试。",
+      "quota": "考虑升级您的计划以获得更多使用量。",
+      "validation": "请检查您的输入参数。",
+      "unknown": "如果问题持续存在，请联系支持。"
+    }
+  },
+  "quiz_generator": {
+    "title": "AI测验生成器",
+    "description": "使用AI为K-12学生生成定制化测验。只需选择年级和科目即可创建引人入胜的选择题。",
+    "breadcrumb": {
+      "home": "首页",
+      "quiz_generator": "测验生成器"
+    },
+    "form": {
+      "title": "创建测验",
+      "description": "选择年级和科目来生成您的测验",
+      "grade_label": "年级",
+      "grade_placeholder": "选择年级",
+      "subject_label": "科目",
+      "subject_placeholder": "选择科目",
+      "generate_button": "生成测验",
+      "generating": "生成中...",
+      "validation_message": "请选择年级和科目",
+      "ready_message": "准备生成测验",
+      "try_example": "试试这些例子：",
+      "example_math": "3年级数学",
+      "example_science": "5年级科学"
+    },
+    "grades": {
+      "kindergarten": "幼儿园",
+      "grade_1": "一年级",
+      "grade_2": "二年级",
+      "grade_3": "三年级", 
+      "grade_4": "四年级",
+      "grade_5": "五年级",
+      "grade_6": "六年级"
+    },
+    "subjects": {
+      "math": "数学",
+      "science": "科学",
+      "english": "英语",
+      "social_studies": "社会科学"
+    },
+    "difficulty": {
+      "easy": "简单",
+      "medium": "中等", 
+      "hard": "困难"
+    },
+    "provider": {
+      "demo": "演示模式"
+    },
+    "results": {
+      "title": "生成的测验", 
+      "description": "您的AI生成的测验题目将显示在这里",
+      "placeholder": "请在上方选择选项以生成测验题目",
+      "generating": "正在生成您的测验...",
+      "quiz_info": "测验信息",
+      "grade_subject": "年级：{grade}，科目：{subject}",
+      "total_questions": "共 {count} 道题",
+      "question_number": "第 {number} 题",
+      "questions_title": "测验题目",
+      "correct_answer": "正确答案",
+      "explanation": "解释",
+      "no_questions": "未生成题目，请重试。",
+      "demo_mode": "演示模式",
+      "generated": "生成时间",
+      "provider": "提供方",
+      "options": "选项"
+    },
+    "actions": {
+      "export": "导出",
+      "regenerate": "重新生成",
+      "edit": "编辑",
+      "save": "保存",
+      "cancel": "取消",
+      "edit_quiz": "编辑测验",
+      "preview": "预览",
+      "new_quiz": "新测验"
+    },
+    "messages": {
+      "generation_started": "开始生成测验！",
+      "generation_complete": "测验生成成功！",
+      "generation_failed": "生成测验失败，请重试。",
+      "auto_saved": "测验已自动保存到浏览器"
+    },
+    "welcome": {
+      "title": "欢迎使用 AI 测验生成器",
+      "subtitle": "几秒钟内创建高质量的 K-12 测验",
+      "welcome_tab": "欢迎",
+      "demo_tab": "试用演示",
+      "feature1_title": "生成定制测验",
+      "feature1_desc": "轻松创建适合年级的数学、科学等测验",
+      "feature2_title": "编辑和定制",
+      "feature2_desc": "根据教学需求微调问题和答案",
+      "feature3_title": "导出和分享",
+      "feature3_desc": "下载为 PDF 或直接打印供课堂使用",
+      "try_demo_button": "试用演示",
+      "start_guide_button": "开始指引",
+      "demo_title": "选择演示测验",
+      "demo_description": "试用这些预制测验，了解功能如何工作",
+      "math_demo_title": "三年级数学测验",
+      "math_demo_desc": "基础运算、模式和测量",
+      "science_demo_title": "五年级科学测验",
+      "science_demo_desc": "能源、植物、生态系统和物质",
+      "instant_demo": "即时预览"
+    },
+    "demo": {
+      "title": "试用样例测验",
+      "description": "立即体验测验生成器的功能",
+      "math_title": "三年级数学",
+      "math_desc": "基础算术",
+      "science_title": "五年级科学",
+      "science_desc": "生态系统",
+      "loading": "正在加载样例测验...",
+      "success": "样例测验已加载！",
+      "is_demo": "这是一个演示测验"
+    },
+    "guide": {
+      "welcome": "让我们开始吧",
+      "welcome_message": "这个简短的指南将向您展示如何使用测验生成器",
+      "step1_title": "选择年级和科目",
+      "step1_content": "为您的测验选择适当的年级水平和科目",
+      "step2_title": "生成您的测验",
+      "step2_content": "点击生成测验按钮创建定制问题",
+      "step3_title": "查看和编辑",
+      "step3_content": "查看问题并点击编辑按钮进行修改",
+      "step4_title": "导出选项",
+      "step4_content": "打印或保存为PDF供课堂使用"
+    }
   }
 }

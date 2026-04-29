@@ -3,37 +3,21 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "QuizAny",
       "logo": {
-        "src": "/logo.png",
-        "alt": "ShipAny"
+        "src": "/quizany-new-logo.svg",
+        "alt": "QuizAny"
       },
       "url": "/"
     },
     "nav": {
-      "items": [
-        {
-          "title": "Features",
-          "url": "/#feature",
-          "icon": "RiSparkling2Line"
-        },
-        {
-          "title": "Pricing",
-          "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
-        },
-        {
-          "title": "Showcase",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
-        }
-      ]
+      "items": []
     },
     "buttons": [
       {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
+        "title": "Get QuizAny",
+        "url": "/quiz-generator",
+        "target": "_self",
         "variant": "link",
         "icon": "RiArrowRightUpLine"
       }
@@ -43,20 +27,20 @@
     "show_locale": true
   },
   "hero": {
-    "title": "Ship Any AI Startups in hours, not days",
-    "highlight_text": "Ship Any",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
+    "title": "Create personalized K-12 quizzes in minutes",
+    "highlight_text": "personalized",
+    "description": "QuizAny is an AI-powered quiz generator designed specifically for K-12 education.<br/>Create quality educational quizzes with just a few simple steps.",
     "announcement": {
-      "label": "2025",
+      "label": "2026",
       "title": "🎉 Happy New Year",
-      "url": "/#pricing"
+      "url": "/quiz-generator"
     },
-    "tip": "🎁 50% off before 2025",
+    "tip": "🎁 50% off before 2026",
     "buttons": [
       {
         "title": "Get Started",
         "icon": "RiFlashlightFill",
-        "url": "/#pricing",
+        "url": "/quiz-generator",
         "target": "_self",
         "variant": "default"
       },
@@ -72,7 +56,7 @@
     "show_badge": false
   },
   "branding": {
-    "title": "ShipAny is built on the shoulders of giants",
+    "title": "QuizAny is built with modern technologies",
     "items": [
       {
         "title": "Next.js",
@@ -113,28 +97,28 @@
   },
   "introduce": {
     "name": "introduce",
-    "title": "What is ShipAny",
+    "title": "What is QuizAny",
     "label": "Introduce",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
+    "description": "QuizAny is an AI-powered educational tool specifically designed for K-12 teachers to create personalized quizzes for students.",
     "image": {
       "src": "/imgs/features/1.png"
     },
     "items": [
-      {
-        "title": "Ready-to-use Templates",
-        "description": "Choose from dozens of production-ready AI SaaS templates to quickly start your project.",
-        "icon": "RiNextjsFill"
-      },
-      {
-        "title": "Infrastructure Setup",
-        "description": "Get instant access to scalable infrastructure with best practices built-in.",
-        "icon": "RiDatabase2Line"
-      },
-      {
-        "title": "Quick Deployment",
-        "description": "Deploy your AI SaaS application to production in hours, not days.",
-        "icon": "RiCloudyFill"
-      }
+              {
+          "title": "AI-Powered Quiz Generation",
+          "description": "Create high-quality educational quizzes tailored to specific grade levels and subjects with just a few clicks.",
+          "icon": "RiRobot2Fill"
+        },
+              {
+          "title": "Customizable Templates",
+          "description": "Easily customize quiz questions, options, and explanations to match your teaching needs and student learning levels.",
+          "icon": "RiLayoutGridFill"
+        },
+              {
+          "title": "Instant Results",
+          "description": "Generate complete quizzes in seconds, saving hours of preparation time for busy K-12 educators.",
+          "icon": "RiTimerFlashFill"
+        }
     ]
   },
   "benefit": {
@@ -142,6 +126,7 @@
     "title": "Why Choose ShipAny",
     "label": "Benefits",
     "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
+    "disabled": true,
     "items": [
       {
         "title": "Complete Framework",
@@ -173,6 +158,7 @@
     "name": "usage",
     "title": "How to Launch with ShipAny",
     "description": "Get your AI SaaS startup running in three simple steps:",
+    "disabled": true,
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -213,6 +199,7 @@
     "name": "feature",
     "title": "Key Features of ShipAny",
     "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+    "disabled": true,
     "items": [
       {
         "title": "Next.js Boilerplate",
@@ -251,6 +238,7 @@
     "label": "Stats",
     "title": "People Love ShipAny",
     "description": "for it's easy to use and fast to ship.",
+    "disabled": true,
     "icon": "FaRegHeart",
     "items": [
       {
@@ -274,6 +262,7 @@
     "name": "testimonial",
     "label": "Testimonial",
     "title": "What Users Say About ShipAny",
+    "disabled": true,
     "description": "Hear from developers and founders who launched their AI startups with ShipAny.",
     "icon": "GoThumbsup",
     "items": [
@@ -332,6 +321,7 @@
     "label": "FAQ",
     "title": "Frequently Asked Questions About ShipAny",
     "description": "Have another question? Contact us on Discord or by email.",
+    "disabled": true,
     "items": [
       {
         "title": "What exactly is ShipAny and how does it work?",
@@ -361,19 +351,19 @@
   },
   "cta": {
     "name": "cta",
-    "title": "Ship your first AI SaaS Startup",
-    "description": "Start from here, ship with ShipAny.",
+    "title": "Generate K-12 Quizzes in Minutes",
+    "description": "Create personalized educational content for your students with AI",
     "buttons": [
       {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
+        "title": "Start Creating Quizzes",
+        "url": "/quiz-generator",
+        "target": "_self",
         "icon": "GoArrowUpRight"
       },
       {
-        "title": "Read Document",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
+        "title": "View Sample Quizzes",
+        "url": "/quiz-generator",
+        "target": "_self",
         "variant": "outline"
       }
     ]

@@ -47,18 +47,7 @@ export default function Header({ header }: { header: HeaderType }) {
               href={(header.brand?.url as any) || "/"}
               className="flex items-center gap-2"
             >
-              {header.brand?.logo?.src && (
-                <img
-                  src={header.brand.logo.src}
-                  alt={header.brand.logo.alt || header.brand.title}
-                  className="w-8"
-                />
-              )}
-              {header.brand?.title && (
-                <span className="text-xl text-primary font-bold">
-                  {header.brand?.title || ""}
-                </span>
-              )}
+              <span className="text-2xl font-bold text-blue-500">QuizAny</span>
             </Link>
             <div className="flex items-center">
               <NavigationMenu>
@@ -173,18 +162,7 @@ export default function Header({ header }: { header: HeaderType }) {
               href={(header.brand?.url || "/") as any}
               className="flex items-center gap-2"
             >
-              {header.brand?.logo?.src && (
-                <img
-                  src={header.brand.logo.src}
-                  alt={header.brand.logo.alt || header.brand.title}
-                  className="w-8"
-                />
-              )}
-              {header.brand?.title && (
-                <span className="text-xl font-bold">
-                  {header.brand?.title || ""}
-                </span>
-              )}
+              <span className="text-2xl font-bold text-blue-500">QuizAny</span>
             </Link>
             <Sheet>
               <SheetTrigger asChild>
@@ -199,18 +177,7 @@ export default function Header({ header }: { header: HeaderType }) {
                       href={(header.brand?.url || "/") as any}
                       className="flex items-center gap-2"
                     >
-                      {header.brand?.logo?.src && (
-                        <img
-                          src={header.brand.logo.src}
-                          alt={header.brand.logo.alt || header.brand.title}
-                          className="w-8"
-                        />
-                      )}
-                      {header.brand?.title && (
-                        <span className="text-xl font-bold">
-                          {header.brand?.title || ""}
-                        </span>
-                      )}
+                      <span className="text-2xl font-bold text-blue-500">QuizAny</span>
                     </Link>
                   </SheetTitle>
                 </SheetHeader>
